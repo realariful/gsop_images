@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="gsop_images.list">
+      <field name="name">gsop_images list</field>
+      <field name="model">gsop_images.gsop_images</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="gsop_images.action_window">
+      <field name="name">gsop_images window</field>
+      <field name="res_model">gsop_images.gsop_images</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="gsop_images.action_server">
+      <field name="name">gsop_images server</field>
+      <field name="model_id" ref="model_gsop_images_gsop_images"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="gsop_images" id="gsop_images.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="gsop_images.menu_1" parent="gsop_images.menu_root"/>
+    <menuitem name="Menu 2" id="gsop_images.menu_2" parent="gsop_images.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="gsop_images.menu_1_list" parent="gsop_images.menu_1"
+              action="gsop_images.action_window"/>
+    <menuitem name="Server to list" id="gsop_images" parent="gsop_images.menu_2"
+              action="gsop_images.action_server"/>
+    -->
+  </data>
+</odoo>
